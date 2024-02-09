@@ -1,0 +1,8 @@
+require "chook.options"
+require "chook.keymaps"
+require "chook.plugins"
+require "chook.colourscheme"
+require "chook.autopairs"
+require "chook.cmp"
+require "chook.lsp"
+require "chook.treesitter"
