@@ -40,6 +40,15 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Toggle line wrap
+vim.keymap.set("n", "<A-z>", function()
+    if vim.o.wrap and vim.o.linebreak then
+        vim.cmd(":set nowrap nolinebreak")
+    else
+        vim.cmd(":set wrap linebreak")
+    end
+end, opts)
+
 -- Insert --
 -- Press jk fast to enter
 --keymap("i", "jk", "<ESC>", opts)
