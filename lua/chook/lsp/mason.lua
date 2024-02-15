@@ -3,6 +3,7 @@ local servers = {
 	"pyright",
 	"jsonls",
     "rust_analyzer",
+    "omnisharp",
 }
 
 local settings = {
